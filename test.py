@@ -5,7 +5,7 @@ import requests
 
 SIZE=128
 MODEL_URI='http://localhost:8502/v1/models/pets:predict'
-CLASSES = ['Cat', 'Dog']
+CLASSES = ['might have COVID-19', 'doesn''t have COVID-19']
 
 def get_prediction(image_path):
     image = tf.keras.preprocessing.image.load_img(

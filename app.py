@@ -31,3 +31,8 @@ if __name__ == '__main__':
 
 # tensorflow/serving docker command
 #sudo docker run -p 8502:8501 --name=pets -v "/home/rhyme/Desktop/app/pets/:/models/pets/1" -e MODEL_NAME=pets tensorflow/serving
+
+#sudo docker run -p 8502:8501 --name=pets -v "/home/merihen/Covid-19-Chest-Xray-Detector/pets/:/models/pets/1" -e MODEL_NAME=pets tensorflow/serving
+
+
+# docker run -p 8502:8501 --name=pets -v "/home/merihen/xray_model/1:/models/xray_model/1" -e MODEL_NAME=xray_model tensorflow/serving
