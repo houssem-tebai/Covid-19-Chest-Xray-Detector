@@ -4,7 +4,7 @@ import json
 import requests
 
 SIZE=128
-MODEL_URI='http://localhost:8502/v1/models/pets:predict'
+MODEL_URI='http://52.170.84.148:8502/v1/models/xray:predict'
 CLASSES = ['might have COVID-19', 'doesn''t have COVID-19']
 
 def get_prediction(image_path):
