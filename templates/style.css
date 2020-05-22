@@ -1,0 +1,154 @@
+.du_documentupload h4 {
+    text-transform: inherit;
+  }
+  
+  .du-box {
+    background: #f5f5f5;
+    padding: 40px 0 20px 0;
+  }
+  
+  .du-box i {
+    float: initial;
+    margin-left: calc(50% - 17px);
+  }
+  
+  .du-dropfiles a {
+    color: #2c76bd;
+  }
+  
+  .du-dropfiles a {
+    cursor: pointer;
+  }
+  
+  .du-buttons a {
+    min-width: 100px;
+    margin-left: 20px;
+  }
+  
+  .du-accepted {
+    color: #8c8c8c;
+    margin: 10px 0 0 0;
+    float: left;
+    width: 100%;
+  }
+  
+  .du-bar-wrap {
+    margin: 15px 0;
+    float: left;
+    width: 100%;
+    height: 10px;
+    background: #f5f5f5;
+  }
+  
+  .du-bar-progress {
+    width: 30%;
+    background: #76bf28;
+    height: 100%;
+    transition: all .5s ease;
+  }
+  
+  .du-buttons {
+    padding-top: 20px;
+    float: right;
+    height: 36px;
+  }
+  
+  .du-documents {
+    float: left;
+  }
+  
+  .du-doc {
+    width: 60px;
+    height: 80px;
+    float: left;
+    text-align: center;
+    margin: 0 10px 0 0;
+  }
+  
+  .du-doc .du-doc-options i {
+    opacity: .5;
+    display: none;
+  }
+  
+  .du-doc .du-doc-options i:hover {
+    opacity: 1;
+  }
+  
+  .du-doc.is-selected .du-doc-img,
+  .du-doc:hover .du-doc-img {
+    opacity: 1;
+    background: white;
+    border: 1px solid #979797;
+  }
+  
+  .du-doc.is-selected .du-doc-options i,
+  .du-doc:hover .du-doc-options i {
+    display: block;
+  }
+  
+  .du-doc:hover .du-doc-img {
+    background: white;
+    border: 1px solid black;
+  }
+  
+  .du-doc span {
+    font-size: 12px;
+  }
+  
+  .du-doc-img {
+    width: 60px;
+    text-align: center;
+    margin: 0px 0;
+    background: #f5f5f5;
+    float: left;
+    border: 1px solid #f5f5f5;
+    transition: all .5s ease;
+  }
+  
+  .du-doc-img i {
+    margin: 7px 0 0 13px;
+    float: initial;
+  }
+  
+  .du-doc-options {
+    margin: 10px 0;
+    float: right;
+  }
+  
+  .du-doc-options i {
+    float: right;
+  }
+  
+  @media(max-width: 400px) {
+    .du-buttons {
+      width: 100%;
+    }
+    .du-buttons .btn {
+      width: 100%;
+      margin-left: 0px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  
+  #open-file { visibility: hidden;
+    display: none; }
+  
+  .du-dropfiles-link {
+      color: #2c76bd!important;
+      background: transparent!important;
+      border: none!important;
+      padding: 0px!important;
+  }
+  
+  .du-dropfiles-link:hover {
+  text-decoration: underline;
+  }
+  
+  .du-dropfiles-link:focus {
+  font-size: 18px;}
+
+  
+  
+  
+  

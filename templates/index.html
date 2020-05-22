@@ -1,16 +1,121 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="container">
-    <h1>Upload Xray Image</h1>
-    <hr>
-    <form class="form-inline" action="{{ url_for('index') }}" method="post" enctype="multipart/form-data">
-      <div class="form-group">
-        <input type="file" name="file" class="btn btn-default">
-      </div>
-      <div class="form-group">
-        <input type="submit" value="Upload" class="btn btn-default">
-      </div>
-    </form>
 
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "style.css" />
+<link rel="stylesheet" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/css/b588cea.css?v=20170302152003">
+<link rel="stylesheet" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/css/6ebb67a.css?v=20170302152003">
+<link rel="stylesheet" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/css/e869d7a.css?v=20170302152003">
+<link rel="stylesheet" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/css/1e123d1.css?v=20170302152003">
+<link rel="stylesheet" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/css/70da5a7.css?v=20170302152003">
+<link rel="stylesheet" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/css/b250028.css?v=20170302152003">
+<link rel="stylesheet" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/css/91cef99.css?v=20170302152003">
+<link rel="stylesheet" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/css/ce0fff5.css?v=20170302152003">
+<link rel="stylesheet" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/css/80ab5cc.css?v=20170302152003">
+<link rel="stylesheet" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/css/595863b.css?v=20170302152003">
+<link rel="shortcut icon" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/favicon.ico">
+<link rel="icon" type="image/jpeg" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/favicon.jpg">
+<link rel="icon" type="image/vnd.microsoft.icon" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/images/apple-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/images/apple-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/images/apple-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/images/apple-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/images/apple-icon-144x144-precomposed.png">
+<script src="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/js/4cb2025.js?v=20170302152003"></script>
+<script src="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/js/b76b006.js?v=20170302152003"></script>
+<script src="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/js/1e350da.js?v=20170302152003"></script>
+<script src="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/js/32e0e07.js?v=20170302152003"></script>
+<script src="https://cdn-sm-aleagamingltd-519044.c.cdn77.org/js/9eb0f10.js?v=20170302152003"></script>
+<script src="scripts.js"></script>
+<div class=" du_documentupload">
+    <div class="modal__content" uib-modal-transclude="">
+      <div class="modal__header modal_participation ng-scope">
+        <h2 class="modal__title ng-binding">
+          <i class="ico-sm icon-hdd-up"></i>Covid-19 Detector
+      </h2>
+        <button class="modal__help" ng-click="toggleHelp()">
+          <i class="ico-xs icon-bubbles"></i>
+          <span class="menuHover ng-binding">Contact Houssem</span>
+      </button>
+        <button class="modal__close" ng-click="closeModal()" data-dismiss="modal" aria-label="Close">
+          <i class="ico-xs icon-cross2"></i>
+      </button>
+      </div>
+      <div class="modal__body ">
+        <div class="col-xs-12 col-sm-12 col-md-12 boxContent ">
+          <div class="row">
+  
+  
+          </div>
+  
+  
+          <div class="row">
+            <div>
+              <h4 class="ng-binding">Redhat123!!!</h4>
+              <p class="text-justify ng-binding">This web app can detect the presence of Covid-19 in a patient from Chest X-ray sample</p>
+  
+  
+              <div class="row  du-properties">
+  
+  
+                <div class="col-xs-12 text-center du-box  ">
+  
+                  <i class="ico-md icon-cloud-upload"></i>
+                  <div class="du-dropfiles">
+  
+                    <h4>   
+                    Drop Chest X-ray Image here to upload <br /> or 
+                      
+                      
+                          <form class="form-inline" action="{{ url_for('index') }}" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                              <input type="file" name="file" class="btn btn-default">
+                            </div>
+                            <div class="form-group">
+                              <input type="submit" value="Upload" class="btn btn-default">
+                            </div>
+                          </form>
+                      
+             
+                       </h4>
+                  </div>
+  
+  
+                  <div class="du-accepted">
+                    Accepted files types: jpg, png, pdf,bmp... <br /> Max size 5Mb
+                  </div>
+  
+                </div>
+  
+                <div class="du-bar-wrap">
+  
+                  <div class="du-bar-progress">
+  
+                  </div>
+                </div>
+  
+  
+                <div class="du-footer">
+                  <div class="du-buttons">
+                    <a class="btn gray anim250 ng-binding ng-scope">cancel</a>
+                    <a class="btn greenBtn anim250 ng-binding ng-scope">VALIDATE</a>
+  
+  
+                  </div>
+                </div>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+  
+        </div>
+      </div>
+  
+    </div>
+  </div>
 {% endblock %}

@@ -1,0 +1,5 @@
+FROM predector:0.0.1
+WORKDIR /usr/src/app
+RUN pip install pillow
+COPY . .
+CMD [ "python", "./app.py" ]
