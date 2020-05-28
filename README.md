@@ -28,7 +28,7 @@ Then just run __app.py__ , and voila !! you should be able to see the interface 
 You can also use a pre-build docker image to run this project, 
 ### Note that the docker images are a bit large in size and may take some time to download depends on your internet speed
 
-Download the model and run the tensorflow/serving container as mentioned above, and the run this command to lunch the project in a pre-build docker image
+Download the model and run the tensorflow/serving container as mentioned above, and the run this command to launch the project in a pre-build docker image
 ```
 sudo docker run --name xray \ 
         -p 8080:5000 \
@@ -39,7 +39,7 @@ Now you should see the app on http://localhost:8080
 ## Step by step quick start
 
 ### Pre-Requirement
-Before we start lets download all the needed dependencies.
+Before we start lets download all the needed tools.
 
 * [python 3.5 and above:](https://www.python.org/downloads/) 
 
@@ -47,7 +47,7 @@ Before we start lets download all the needed dependencies.
 
     you can skip downloading python and pip if you want to run the project inside of a docker container
 
-* [git:](https://git-scm.com/) duh.. obviously
+* [git:](https://git-scm.com/)
 
 * docker:
 
@@ -67,7 +67,7 @@ git clone https://github.com/houssem-tebai/Covid-19-Chest-Xray-Detector.git
 cd Covid-19-Chest-Xray-Detector
 ```
 
-2. then download the [SavedModel](https://drive.google.com/drive/folders/1Ehll-vh58qF-o6bXQERe9XOqt05K1mvJ?usp=sharing) (or you can run the model and get your own SavedModel). 
+2. Then, download the [SavedModel](https://drive.google.com/drive/folders/1Ehll-vh58qF-o6bXQERe9XOqt05K1mvJ?usp=sharing) (or you can compile the model from model.ipynb and get your own SavedModel). 
   as the name suggest, the SavedModel is just our trained CNN saved in a format called "SavedModel" ready to be sent to tensorflow/serving to be used as a REST api, that recieves Xray-images, and return a result.
   we will be using the tensorflow/serving's docker image, and run our model inside it
 
@@ -84,14 +84,15 @@ sudo docker run -p 8502:8501 \
   now you have a REST api serving at http://localhost:8502/v1/models/xray_model:predict and in its backend lives our model, next step is   to run our frontend app to be able to send images and recieves prediction from this Web-Service
 
 4. Now we just need to run app.py, and we have two options here.
-  1. run it with your IDE of choice or from the command line
-  but before we do that we need to install some python dependencies to run the code without any error
-  to that just run this command in the application directory
+       
+  * run it with your IDE of choice or from the command line
+  but before we do that we need to install some python dependencies to run the code without any errors
+  to do that, just run this command inside the application directory
   ```
   pip install --no-cache-dir -r requirements.txt
   ```
   after installing the requirements you should be able to run app.py
-  to know if everything went good you should get this message on your terminal after running the app
+  to know if everything went well, you should get this message on your terminal.
   ```
  * Serving Flask app "app" (lazy loading)
  * Environment: production
@@ -100,7 +101,7 @@ sudo docker run -p 8502:8501 \
  * Debug mode: off
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
   ```
-  2. run the app inside a docker container
+  * run the app inside a docker container
   here, we need to build a docker image that contains all the necessery packages and file to run the code, to do so, just rub this command.
   ```
   sudo docker build -t "give the image a name" .
