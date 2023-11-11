@@ -7,6 +7,7 @@ SIZE=320
 MODEL_URI='http://52.170.7.78:8502/v1/models/xray:predict'
 CLASSES = ['might have COVID-19', 'doesn''t have COVID-19']
 
+# bla bla bla
 def get_prediction(image_path):
     image = tf.keras.preprocessing.image.load_img(
         image_path, target_size=(SIZE, SIZE, 3)
